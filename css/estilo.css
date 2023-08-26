@@ -1,0 +1,57 @@
+h1{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin: 20px;
+    padding: 10px;
+}
+p{
+    color: blue;
+}
+body{
+    background-color: azure;
+    margin: 10px;
+}
+li{
+    color: rgb(0,0,255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+#idHeadIndex{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulosPrincipales{
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin: 20px;
+    border: 2px solid;
+    text-align: center;
+    padding: 10px;
+}
+.titulosDetalles{
+    color:darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.listaElementos{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.textoPlano{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 10px;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+}
+.imagenPrincipal{
+    background-color: aqua;
+    border-radius: 100%;
+    border:1px solid;
+    padding: 0%;
+}
