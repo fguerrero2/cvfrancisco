@@ -6,7 +6,10 @@
 //
 // Scripts
 // 
-
+/*
+Buscamos este script para poder actualizar el panel de la derecha con los datos y tener un solo archivo 
+index con toda la info.
+*/
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
