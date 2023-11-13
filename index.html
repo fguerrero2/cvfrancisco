@@ -3,22 +3,33 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Trabajo individual | Diseño y desarrollo web | UADE" />
+        <meta name="author" content="Francisco Guerrero" />
         <title>MI CURRICULUM</title>
         <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+
         <!-- Font Awesome icons (free version)-->
+        <!-- Obtenemos de acá los iconos utilizados en el contenido para indicar lenguajes y otras representaciones-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+
         <link href="css/estilo.css" rel="stylesheet" />
+
+        <!-- Agregamos el script externo al reCAPTCHA de Goodle-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+
+
+    <!-- En el cuerpo del diseño están las secciones-->
+    <body id="pagina-inicial">
+        <!-- Navegar en un menu a la izquierda de la pagina-->
+        <!-- esto tambien de adapta a una pantalla menor, es reponsive-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="lateralNav">
+            <a class="navbar-brand js-scroll-trigger" href="#pagina-inicial">
                 <span class="d-block d-lg-none">Francisco Guerrero</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="imagenes/foto.jpg" alt="..." /></span>
             </a>
@@ -34,9 +45,12 @@
                 </ul>
             </div>
         </nav>
-        <!-- Page Content-->
+        
+        <!-- Contenedor principsal del contenido-->
         <div class="container-fluid p-0">
+
             <!-- Sobre-->
+            <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="sobre">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
@@ -65,6 +79,7 @@
             <hr class="m-0" />
 
             <!-- Experiencia-->
+            <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="experiencia">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experiencia</h2>
@@ -111,10 +126,12 @@
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Educacion-->
+            <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="educacion">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Educacion</h2>
+                    <h2 class="mb-5">Educación</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Universidad Argentina de la Empresa</h3>
@@ -126,7 +143,9 @@
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Conocimientos-->
+            <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="conocimientos">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Conocimientos</h2>
@@ -159,7 +178,9 @@
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Proyectos-->
+            <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="proyectos">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Proyectos</h2>
@@ -180,18 +201,66 @@
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Contacto-->
+            <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="contacto">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Contacto</h2>
-                    <p>AGREGAR FORMULARIO DE CONTACTO</p>
+                    <h2 class="mb-1">Formulario de contacto</h2>
+                    <form action="" method="post" id="envioform" >
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
+                            <div class="flex-grow-0">
+                                <label  for="nombre">Nombre</label>
+                                <input class="form-control" type="text" id="nombre" name="nombre" required="required"> 
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
+                            <div class="flex-grow-0">
+                                <label  for="apellido">Apellido</label>
+                                <input class="form-control" type="text" id="apellido" name="apellido" required="required"> 
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
+                            <div class="flex-grow-0">
+                                <label  for="email">E-mail</label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="eg: youremail@gmail.com" required="required"> 
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
+                            <div class="flex-grow-0">
+                                <label  for="telefono">Telefono</label>
+                                <input class="form-control" type="text" id="telefono" name="telefono" data-validation="number" data-validation-allowing="negative,number" datavalidation-ignore="$" required="required" > 
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
+                            <div class="flex-grow-0">
+                                <label for="motivo">Motivo</label>
+                                <textarea class="form-control" id="motivo" name="motivo" rows="4" cols="40" required="required">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
+                            <!-- El widget de reCAPTCHA -->
+                            <div class="g-recaptcha" data-sitekey="6LcWAg0pAAAAAFFoSjN1r7vEJtxLK5ngzcMNOQe1"></div>
+                        </div>
+
+                        <div>
+                            <input type="submit" id="enviodatos">
+                        </div>
+                    </form>
 
                 </div>
             </section>
         </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+
+        <!-- Javascript para cambio de seccion segun eleccion del menu-->
+        <script src="js/elegirseccion.js"></script>
+
+        <!-- Validaciones de formulario contacto JS-->
+        <script src="js/validar.js"></script>
+
     </body>
 </html>
