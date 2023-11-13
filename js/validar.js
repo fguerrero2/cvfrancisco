@@ -6,8 +6,6 @@ function paginaCargada()
     var boton = document.getElementById("enviodatos");
     boton.onclick = validarFormulario;
 
-    // Agregar el evento de escucha para el envío del formulario
-    document.querySelector("form").addEventListener("enviodatos", validarEnvioreCAPCHA);
 
 };
 
@@ -50,8 +48,11 @@ function validarFormulario()
     }
 
     
-    var formulario = document.getElementById("respuesta");
-    formulario.submit();
+    /*var formulario = document.getElementById("respuesta");
+    formulario.submit();*/
+
+    alert("Recibimos su e-mail, entraremos en contacto a la brevedad.");
+    return;
 }
 
 

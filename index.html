@@ -19,7 +19,7 @@
 
         <!-- Agregamos el script externo al reCAPTCHA de Goodle-->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        
+
     </head>
 
 
@@ -48,7 +48,16 @@
         
         <!-- Contenedor principsal del contenido-->
         <div class="container-fluid p-0">
+            <div>
+                <div class="col text-center">
+                    <label id="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
 
+            
             <!-- Sobre-->
             <!-- Llamada de las secciones via JavaScript mediante id de cada una-->
             <section class="resume-section" id="sobre">
@@ -69,9 +78,8 @@
                     </div>
                     <p class="lead mb-5">Lider técnico en implementaciones de proyectos ERP</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/francisco-guerrero-a1b4274b"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target="_blank" href="https://github.com/fguerrero2"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="#!"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -229,7 +237,7 @@
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
                             <div class="flex-grow-0">
                                 <label  for="telefono">Telefono</label>
-                                <input class="form-control" type="text" id="telefono" name="telefono" data-validation="number" data-validation-allowing="negative,number" datavalidation-ignore="$" required="required" > 
+                                <input class="form-control" type="text" id="telefono" name="telefono" data-validation="number" data-validation-allowing="number" datavalidation-ignore="$" required="required" > 
                             </div>
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
@@ -238,10 +246,6 @@
                                 <textarea class="form-control" id="motivo" name="motivo" rows="4" cols="40" required="required">
                                 </textarea>
                             </div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
-                            <!-- El widget de reCAPTCHA -->
-                            <div class="g-recaptcha" data-sitekey="6LcWAg0pAAAAAFFoSjN1r7vEJtxLK5ngzcMNOQe1"></div>
                         </div>
 
                         <div>
@@ -261,6 +265,10 @@
 
         <!-- Validaciones de formulario contacto JS-->
         <script src="js/validar.js"></script>
+
+        <!-- JavaScript para cambiar colores-->
+        <script src="js/setearcolores.js"></script>
+
 
     </body>
 </html>
