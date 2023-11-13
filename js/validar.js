@@ -5,6 +5,10 @@ function paginaCargada()
     // Evento que captura el envio del formulario
     var boton = document.getElementById("enviodatos");
     boton.onclick = validarFormulario;
+
+    // Agregar el evento de escucha para el envío del formulario
+    document.querySelector("form").addEventListener("enviodatos", validarEnvioreCAPCHA);
+
 };
 
 // Función para validar el formulario.
@@ -45,7 +49,7 @@ function validarFormulario()
       return;
     }
 
-
+    
     var formulario = document.getElementById("respuesta");
     formulario.submit();
 }
@@ -54,13 +58,11 @@ function validarFormulario()
 
 
 
-// Agregar el evento de escucha para el envío del formulario
-document.querySelector("form").addEventListener("submit", validarFormulario);
 
 
 
 // Función para validar el formulario y verificar reCAPCHA
-function validarFormulario(event) {
+function validarEnvioreCAPCHA(event) {
     event.preventDefault();
     
     // Verificar si el captcha ha sido resuelto
